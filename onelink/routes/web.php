@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,11 +12,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Auth::routes();
+//Backend
+Route::middleware('auth')->group( function (){
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/admin','AdminController@index')->name('admin');
+});
+Route::middleware('auth')->prefix('backend')->group( function (){
+    Route::resource('product','Backend\ProductsController');
+});
+//Front-end
 
-Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/', function () {return view('welcome');})->name('welcome');
+    Route::get('/product/{id}',[\App\Http\Controllers\Frontend\ProductsController::class,'index','id'])->where(
+        ['id']
+    )->name('product');
+    Route::get('/category/{id}',[\App\Http\Controllers\Frontend\CategoryController::class,'index','id'])->where(
+        ['id']
+    )->name('category');
 
+Route::any('/ckfinder/connector', '\CKSource\CKFinderBridge\Controller\CKFinderController@requestAction')
+    ->name('ckfinder_connector');
+
+Route::any('/ckfinder/browser', '\CKSource\CKFinderBridge\Controller\CKFinderController@browserAction')
+    ->name('ckfinder_browser');

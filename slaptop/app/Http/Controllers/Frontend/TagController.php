@@ -11,19 +11,33 @@ use phpDocumentor\Reflection\DocBlock\Tag;
 
 class TagController extends Controller
 {
-    public function getData($slug)
+    public function getData($slug,$page)
     {
         $link = null;
-        $tags = Tags::where('slug', '=', $slug)->first();
-        if (isset($tags)) {
-            $title = $tags->name;
-            $products = $tags->products()->get();
+        $sell = null;
+        $category = Tags::where('slug', '=', $slug)->first();
+        $tag = true;
+        if (empty($category)) {
+            return redirect()->back()->withErrors('404');
+        } else {
+            $product = new Product();
+            $title = $category->name;
+            $products = $category->products()->get();
+            $footer = $category->products()->count();
+            $link['main'] = $category->name;
+            $link['main_url'] = $category->slug;
+            foreach ($products as $item) {
+                $sell = $product->sell($item->old_price, $item->price);
+                $item->price = $product->formatMoney($item->price);
+                $item->old_price = $product->formatMoney($item->old_price);
+            }
         }
-        return $this->render($tags, $title, $products, $link);
+        return $this->render($footer,$page,$category, $title, $products, $link, $tag, $sell);
+
     }
 
-    public function render($tags, $title, $products, $link)
+    public function render($footer,$page,$category, $title, $products, $link, $tag, $sell)
     {
-        return view('frontend.list', ['data' => $tags, 'title' => $title, 'products' => $products, 'slug' => $link]);
+        return view('frontend.list', ['footer'=>$footer,'page'=>$page,'data' => $category, 'title' => $title, 'products' => $products, 'slug' => $link, 'tag' => $tag, 'sell' => $sell]);
     }
 }

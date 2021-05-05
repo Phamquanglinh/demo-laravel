@@ -15,6 +15,10 @@ class CreateCofigsTable extends Migration
     {
         Schema::create('cofigs', function (Blueprint $table) {
             $table->id();
+            $table->string('host_mail')->default('');
+            $table->string('host_phone')->default('');
+            $table->string('description')->default('');
+            $table->string('keyword')->default('');
             $table->timestamps();
         });
     }

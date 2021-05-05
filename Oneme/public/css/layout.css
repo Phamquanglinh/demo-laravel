@@ -30,7 +30,7 @@ footer{
 }
 .bottom-nav ul li a{
     color: #E28989;
-    font-size: 200%; 
+    font-size: 200%;
 }
 ul.text-bold {
     font-weight: bold;
@@ -51,4 +51,12 @@ body{
 }
 .far{
     line-height: inherit!important;
+}
+.slug{
+    max-width: 1000px;
+    padding: 1em;
+    color: #FAB3B3!important;
+}
+.slug a{
+   color: #FAB3B3!important;
 }

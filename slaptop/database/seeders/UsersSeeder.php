@@ -21,7 +21,7 @@ class UsersSeeder extends Seeder
             'name' => 'khanh',
             'email' => 'khanhdang@gmail.com',
             'password' => Hash::make('password'),
-            'role' => 2,
+            'role' => 0,
             'created_at' => now(),
         ]);
 
@@ -29,15 +29,15 @@ class UsersSeeder extends Seeder
             'name' => 'duy',
             'email' => 'vanduy@gmail.com',
             'password' => Hash::make('password'),
-            'role' => 2,
+            'role' => 0,
             'created_at' => now(),
         ]);
 
         DB::table('users')->insert([
-            'name' => 'linh',
+            'name' => 'Phạm Quang linh',
             'email' => 'quanglinh@gmail.com',
             'password' => Hash::make('password'),
-            'role' => 2,
+            'role' => 0,
             'created_at' => now(),
         ]);
 
@@ -45,7 +45,7 @@ class UsersSeeder extends Seeder
             'name' => 'giang',
             'email' => 'truonggiang@gmail.com',
             'password' => Hash::make('password'),
-            'role' => 2,
+            'role' => 0,
             'created_at' => now(),
         ]);
 
@@ -53,7 +53,7 @@ class UsersSeeder extends Seeder
             'name' => 'tuc',
             'email' => 'vantuc@gmail.com',
             'password' => Hash::make('password'),
-            'role' => 2,
+            'role' => 0,
             'created_at' => now(),
         ]);
     }

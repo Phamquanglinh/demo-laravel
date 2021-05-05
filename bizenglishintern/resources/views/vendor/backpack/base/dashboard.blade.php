@@ -10,4 +10,6 @@
 @endphp
 
 @section('content')
+
+
 @endsection

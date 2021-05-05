@@ -4,3 +4,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.opacity{
+    opacity: 0.8;
+}
+.opacity:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
