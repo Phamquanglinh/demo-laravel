@@ -1,0 +1,164 @@
+/** Xuất xứ **/
+.cont{
+    background-color: #FBEAEA;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.heading-tag{
+    color: #fff;
+    font-size: 3vw;
+    background-color: #EBC5C5;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-weight: bold;
+}
+.p-heading{
+    margin-left: 4vw;
+    margin-bottom: 0.7vw;
+    margin-top: 0.3vw;
+}
+.rectangle-12{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border: 20px solid #fff;
+}
+.head-content{
+    font-size: 3vw;
+    font-weight: bold;
+}
+.small-content{
+    font-size: 1.5vw;
+}
+p.line{
+    margin-bottom: 0px;
+}
+p.line-2{
+    margin-bottom: 3vw;
+}
+.rectangle-13{
+    max-width: 200%;
+    margin-top: 20px;
+}
+.b2{
+    flex-wrap: wrap !important;
+    background-color: #FFEAEA !important;
+}
+.infor{
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.title{
+    font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.img-origin{
+    padding: 0px 0px;
+    border: 8px solid #FFEAEA;
+}
+.content-brand{
+    color: #C09797;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+}
+.content-origin{
+    color: #C09797;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+}
+.rate-star{
+    color: #C09797;
+    font-size: 1.5vw;
+    margin-bottom: 0px;
+}
+.star{
+    width: 1.3vw;
+    margin-bottom: 0.4vw;
+}
+.buy-cout{
+    color: #C09797;
+    font-size: 1.3vw;
+    margin-bottom: 0px;
+}
+.nothing{
+    padding-bottom: 2vw;
+}
+.price{
+    color: #EB1111;
+    font-size: 2.3vw;
+    font-weight: 500;
+    margin-bottom: 0.5vw;
+}
+
+.old-price{
+    text-decoration: line-through;
+    color: #968686;
+    margin-bottom: 1vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.all-sale{
+    text-align: right;
+    padding-left: 0px;
+}
+.badge {
+    color: rgb(255, 255, 255);
+    background-color: #EB5454;
+    border-bottom-left-radius: 2.5vw !important;
+    border-top-right-radius: 2.5vw !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    font-size: 2vw;
+    height: 3.5vw;
+    font-weight: 450;
+}
+.line{
+    font-weight: 500;
+}
+.line-2{
+    font-weight: 500;
+}
+/** Đánh Giá của khách hàng **/
+.contain {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.item {
+ background: #FBEAEA;
+ margin-left: 20px;
+ margin-right: 30px;
+ margin-bottom: 20px;
+ color: rgb(0, 0, 0);
+ height: auto;
+ text-align: center;
+ width:  auto;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-items: center;
+}
+.rate-customer{
+    color: #E5B5B5;
+    font-size: 3vw;
+    font-weight: bold;
+}
+.customer-review{
+    background-color: #fff;
+    font-size: 2.6vw;
+    text-align: left;;
+    margin-top: 15px;
+    border: 20px solid #fff;
+    font-weight: 500;
+}
+.customer-image{
+    max-width: 2000px;
+}

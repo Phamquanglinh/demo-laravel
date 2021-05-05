@@ -1,0 +1,54 @@
+/* Layout css */
+/*HEADER*/
+.menu {
+    background: #F05E5E!important;
+}
+.navbar-toggler{
+    border: none!important;
+}
+.nav-link{
+    color: white!important;
+}
+.box-shadow{
+    box-shadow: 1px 1px 19px #0e0e0ed1;
+}
+.text-white{
+    font-size: 150%;
+}
+/*footer*/
+footer{
+    padding: 30px;
+    background: #FBEAEA;
+    color: white;
+}
+.email-request{
+    padding: 50px;
+}
+.bottom-nav{}
+.bottom-nav ul li{
+    list-style: none;
+}
+.bottom-nav ul li a{
+    color: #E28989;
+    font-size: 200%; 
+}
+ul.text-bold {
+    font-weight: bold;
+}
+.copyright.area{
+    height: 10%;
+    background: #FF8686;
+}
+body{
+    scroll-behavior: smooth;
+    transition: 0.6ms;
+    animation: loading-web 0.6s ease;
+    background: white;
+}
+.btn{
+    border-radius: 0!important;
+    margin-right: -0.5em!important;
+}
+.far{
+    line-height: inherit!important;
+}

@@ -1,0 +1,80 @@
+.rectangle-20{
+    background-color: #FAB3B3 !important;
+    border: 20px solid #fff
+}
+.rectangle-6{
+    border-radius: 20px;
+    background-color: red !important;
+    color: white !important;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.col-md-3{
+    align-content: center;
+    width: 30%;
+    height: 100%;
+    border: 5px solid #FAB3B3
+}
+.n-9{
+    margin-left: -12px;
+}
+.product-img{
+    height: 170px;
+    width: auto;
+    max-width: 200px;
+}
+.badge {
+    color: #fff;
+    background-color: #EB5454;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    font-size: 130%;
+    height: 35px;
+}
+.price{
+    text-align: left;
+    color: #EB1111;
+    font-size: 220%;
+}
+.old-price{
+    text-align: left;
+    text-decoration: line-through;
+    font-size: 150%;
+    color: #968686 ;
+}
+.product-name{
+    font-size: 25px;
+    font-weight:bold;
+    text-align: left;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.brand{
+    text-align: left;
+    color: #B88989;
+}
+.origin{
+    text-align: left;
+    color: #C09797 ;
+}
+.buy-cout{
+    text-align: left;
+    color: #C09797;
+    font-size: 90%;
+}
+.rate{
+    text-align: left;
+    color: #B19B9B;
+    font-size: 80%;
+}
+.star{
+    height: 12px !important;
+    width: auto;
+}
+
